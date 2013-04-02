@@ -27,6 +27,9 @@ function gsb_feature_staff_ct_strongarm() {
         'workbench_access' => array(
           'weight' => '1',
         ),
+        'metatags' => array(
+          'weight' => '14',
+        ),
       ),
       'display' => array(),
     ),
