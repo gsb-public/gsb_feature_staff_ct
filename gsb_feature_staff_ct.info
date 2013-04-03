@@ -14,7 +14,6 @@ dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = telephone
 dependencies[] = text
-//features[taxonomy][] = department
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[field][] = node-staff-field_body
