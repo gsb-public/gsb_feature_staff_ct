@@ -64,17 +64,11 @@ function gsb_feature_staff_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_contact' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '12',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '12',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -173,17 +167,14 @@ function gsb_feature_staff_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_contact' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '13',
-        ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'inline',
+          'module' => 'hs_taxonomy',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'hs_taxonomy_term_reference_hierarchical_text',
+          'weight' => '3',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -255,20 +246,11 @@ function gsb_feature_staff_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_contact' => array(
-          'label' => 'hidden',
-          'module' => 'email',
-          'settings' => array(
-            'conditions' => array(),
-          ),
-          'type' => 'email_default',
-          'weight' => '2',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '9',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -354,20 +336,14 @@ function gsb_feature_staff_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_contact' => array(
+        'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => '12',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '1',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -461,17 +437,16 @@ function gsb_feature_staff_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_contact' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '10',
-        ),
         'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'conditions' => array(),
+            'image_link' => '',
+            'image_style' => '170x170',
+          ),
+          'type' => 'image',
+          'weight' => '2',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -566,20 +541,14 @@ function gsb_feature_staff_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_contact' => array(
+        'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
           ),
           'type' => 'text_default',
-          'weight' => '14',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '3',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -671,21 +640,14 @@ function gsb_feature_staff_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_contact' => array(
+        'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
-            'trim_length' => 600,
           ),
-          'type' => 'text_trimmed',
-          'weight' => '13',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'type' => 'text_default',
+          'weight' => '2',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -765,21 +727,11 @@ function gsb_feature_staff_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_contact' => array(
-          'label' => 'hidden',
-          'module' => 'telephone',
-          'settings' => array(
-            'conditions' => array(),
-            'title' => '',
-          ),
-          'type' => 'telephone_link',
-          'weight' => '3',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '10',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -865,20 +817,11 @@ function gsb_feature_staff_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_contact' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'conditions' => array(),
-          ),
-          'type' => 'text_default',
-          'weight' => '11',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '11',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -970,17 +913,11 @@ function gsb_feature_staff_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_contact' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '14',
-        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '13',
         ),
         'tiny' => array(
           'label' => 'above',
@@ -1072,20 +1009,14 @@ function gsb_feature_staff_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
-        'media_contact' => array(
-          'label' => 'inline',
+        'teaser' => array(
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'conditions' => array(),
           ),
-          'type' => 'text_plain',
-          'weight' => '0',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'type' => 'text_default',
+          'weight' => '2',
         ),
         'tiny' => array(
           'label' => 'above',

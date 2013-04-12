@@ -19,7 +19,13 @@ function gsb_feature_staff_ct_strongarm() {
       'teaser' => array(
         'custom_settings' => TRUE,
       ),
-      'media_contact' => array(
+      'ical' => array(
+        'custom_settings' => TRUE,
+      ),
+      'tiny' => array(
+        'custom_settings' => TRUE,
+      ),
+      'featured' => array(
         'custom_settings' => TRUE,
       ),
       'full' => array(
@@ -34,13 +40,7 @@ function gsb_feature_staff_ct_strongarm() {
       'search_result' => array(
         'custom_settings' => FALSE,
       ),
-      'ical' => array(
-        'custom_settings' => FALSE,
-      ),
-      'tiny' => array(
-        'custom_settings' => FALSE,
-      ),
-      'featured' => array(
+      'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
       'token' => array(
