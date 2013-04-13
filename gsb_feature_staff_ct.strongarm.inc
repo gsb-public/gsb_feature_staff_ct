@@ -52,6 +52,9 @@ function gsb_feature_staff_ct_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'people_fpp' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
