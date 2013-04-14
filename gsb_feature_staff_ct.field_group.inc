@@ -87,7 +87,7 @@ function gsb_feature_staff_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Position wrapper',
-    'weight' => '4',
+    'weight' => '1',
     'children' => array(
       0 => 'field_department',
       1 => 'field_title_position_unlimited',
