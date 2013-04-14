@@ -68,7 +68,7 @@ function gsb_feature_staff_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '12',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -159,7 +159,7 @@ function gsb_feature_staff_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '8',
+          'weight' => 8,
         ),
         'featured' => array(
           'label' => 'above',
@@ -174,9 +174,12 @@ function gsb_feature_staff_ct_field_default_fields() {
           'weight' => 0,
         ),
         'people_fpp' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
+          'label' => 'hidden',
+          'module' => 'hs_taxonomy',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'hs_taxonomy_term_reference_hierarchical_links',
           'weight' => 0,
         ),
         'teaser' => array(
@@ -186,7 +189,7 @@ function gsb_feature_staff_ct_field_default_fields() {
             'conditions' => array(),
           ),
           'type' => 'hs_taxonomy_term_reference_hierarchical_text',
-          'weight' => '3',
+          'weight' => 3,
         ),
         'tiny' => array(
           'label' => 'above',
@@ -209,7 +212,7 @@ function gsb_feature_staff_ct_field_default_fields() {
           'maxlength_js_label' => '',
         ),
         'type' => 'options_select',
-        'weight' => '13',
+        'weight' => 13,
       ),
       'workbench_access_field' => 0,
     ),
@@ -262,7 +265,7 @@ function gsb_feature_staff_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '9',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -355,10 +358,13 @@ function gsb_feature_staff_ct_field_default_fields() {
           'weight' => 0,
         ),
         'people_fpp' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -462,10 +468,15 @@ function gsb_feature_staff_ct_field_default_fields() {
           'weight' => 0,
         ),
         'people_fpp' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'image',
+          'settings' => array(
+            'conditions' => array(),
+            'image_link' => '',
+            'image_style' => '170x170',
+          ),
+          'type' => 'image',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -572,10 +583,13 @@ function gsb_feature_staff_ct_field_default_fields() {
           'weight' => 0,
         ),
         'people_fpp' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -677,10 +691,13 @@ function gsb_feature_staff_ct_field_default_fields() {
           'weight' => 0,
         ),
         'people_fpp' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -773,7 +790,7 @@ function gsb_feature_staff_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '10',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -869,7 +886,7 @@ function gsb_feature_staff_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '11',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -971,7 +988,7 @@ function gsb_feature_staff_ct_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '13',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1070,10 +1087,13 @@ function gsb_feature_staff_ct_field_default_fields() {
           'weight' => 0,
         ),
         'people_fpp' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(
+            'conditions' => array(),
+          ),
+          'type' => 'text_default',
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
