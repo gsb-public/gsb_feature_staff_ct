@@ -55,6 +55,9 @@ function gsb_feature_staff_ct_strongarm() {
       'people_fpp' => array(
         'custom_settings' => TRUE,
       ),
+      'business_insight' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -68,7 +71,7 @@ function gsb_feature_staff_ct_strongarm() {
           'weight' => '1',
         ),
         'metatags' => array(
-          'weight' => '14',
+          'weight' => '15',
         ),
       ),
       'display' => array(),

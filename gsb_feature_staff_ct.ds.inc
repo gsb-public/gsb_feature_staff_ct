@@ -190,6 +190,7 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
         8 => 'field_salutation',
         9 => 'field_body',
         10 => 'field_phone',
+        11 => 'field_addthis',
       ),
     ),
     'fields' => array(
@@ -204,6 +205,7 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
       'field_salutation' => 'ds_content',
       'field_body' => 'ds_content',
       'field_phone' => 'ds_content',
+      'field_addthis' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
