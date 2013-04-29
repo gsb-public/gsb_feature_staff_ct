@@ -58,6 +58,12 @@ function gsb_feature_staff_ct_strongarm() {
       'business_insight' => array(
         'custom_settings' => FALSE,
       ),
+      'media_contact' => array(
+        'custom_settings' => TRUE,
+      ),
+      'event_listing' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

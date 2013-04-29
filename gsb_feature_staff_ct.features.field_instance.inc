@@ -46,6 +46,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'media_contact' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
+      ),
       'people_fpp' => array(
         'label' => 'above',
         'settings' => array(),
@@ -112,6 +118,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'media_contact' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
       ),
       'people_fpp' => array(
         'label' => 'above',
@@ -188,6 +200,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'media_contact' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
+      ),
       'people_fpp' => array(
         'label' => 'hidden',
         'module' => 'hs_taxonomy',
@@ -260,6 +278,15 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'media_contact' => array(
+        'label' => 'hidden',
+        'module' => 'email',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'email_default',
+        'weight' => 4,
+      ),
       'people_fpp' => array(
         'label' => 'above',
         'settings' => array(),
@@ -326,6 +353,15 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'media_contact' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
       ),
       'people_fpp' => array(
         'label' => 'hidden',
@@ -406,6 +442,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'media_contact' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
       ),
       'people_fpp' => array(
         'label' => 'hidden',
@@ -493,6 +535,15 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'media_contact' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
       'people_fpp' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -571,6 +622,15 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'media_contact' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'conditions' => array(),
+        ),
+        'type' => 'text_default',
+        'weight' => 2,
       ),
       'people_fpp' => array(
         'label' => 'hidden',
@@ -652,6 +712,16 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'media_contact' => array(
+        'label' => 'inline',
+        'module' => 'telephone',
+        'settings' => array(
+          'conditions' => array(),
+          'title' => '',
+        ),
+        'type' => 'telephone_link',
+        'weight' => 5,
+      ),
       'people_fpp' => array(
         'label' => 'above',
         'settings' => array(),
@@ -718,6 +788,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'media_contact' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
       ),
       'people_fpp' => array(
         'label' => 'above',
@@ -792,6 +868,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'media_contact' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
       'people_fpp' => array(
         'label' => 'above',
         'settings' => array(),
@@ -864,6 +946,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'media_contact' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
       ),
       'people_fpp' => array(
         'label' => 'hidden',
