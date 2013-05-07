@@ -212,7 +212,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -454,7 +454,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'conditions' => array(),
-          'image_link' => 'content',
+          'image_link' => '',
           'image_style' => '170x170',
         ),
         'type' => 'image',

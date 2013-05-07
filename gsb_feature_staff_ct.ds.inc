@@ -103,6 +103,11 @@ function gsb_feature_staff_ct_ds_field_settings_info() {
         ),
       ),
     ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
     'field_last_name' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -210,7 +215,7 @@ function gsb_feature_staff_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'div',
-          'ow-cl' => 'person-title',
+          'ow-cl' => 'person-position',
           'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
@@ -366,20 +371,18 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
         0 => 'field_image_single_public',
         1 => 'group_wrapper_name',
         2 => 'field_first_name',
-        3 => 'field_middle_name',
-        4 => 'field_title_position_unlimited',
-        5 => 'group_wrapper_position',
-        6 => 'field_department',
-        7 => 'field_last_name',
+        3 => 'field_title_position_unlimited',
+        4 => 'field_middle_name',
+        5 => 'field_department',
+        6 => 'field_last_name',
       ),
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
       'group_wrapper_name' => 'ds_content',
       'field_first_name' => 'ds_content',
-      'field_middle_name' => 'ds_content',
       'field_title_position_unlimited' => 'ds_content',
-      'group_wrapper_position' => 'ds_content',
+      'field_middle_name' => 'ds_content',
       'field_department' => 'ds_content',
       'field_last_name' => 'ds_content',
     ),
