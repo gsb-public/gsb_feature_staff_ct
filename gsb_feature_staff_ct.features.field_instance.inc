@@ -56,7 +56,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -129,7 +129,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -207,12 +207,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'weight' => 15,
       ),
       'people_fpp' => array(
-        'label' => 'hidden',
-        'module' => 'hs_taxonomy',
+        'label' => 'inline',
+        'module' => 'taxonomy',
         'settings' => array(
           'conditions' => array(),
         ),
-        'type' => 'hs_taxonomy_term_reference_hierarchical_links',
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -291,7 +291,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -454,11 +454,11 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'conditions' => array(),
-          'image_link' => '',
+          'image_link' => 'content',
           'image_style' => '170x170',
         ),
         'type' => 'image',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -726,7 +726,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -799,7 +799,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -878,7 +878,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
