@@ -418,7 +418,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
   $field_instances['node-staff-field_image_single_public'] = array(
     'bundle' => 'staff',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Recommended size for uploaded images is 600x440.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -478,6 +478,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
     'field_name' => 'field_image_single_public',
     'label' => 'Photo',
@@ -1015,6 +1016,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
   t('Middle Name');
   t('Phone');
   t('Photo');
+  t('Recommended size for uploaded images is 600x440.');
   t('SUNetID');
   t('Salutation');
   t('Title/Position');
