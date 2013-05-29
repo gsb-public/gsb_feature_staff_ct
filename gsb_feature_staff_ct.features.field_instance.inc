@@ -422,13 +422,13 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'image',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
           'image_link' => '',
           'image_style' => '',
         ),
-        'type' => 'image',
+        'type' => 'gsb_field_formatter_image',
         'weight' => 5,
       ),
       'featured' => array(
@@ -451,24 +451,24 @@ function gsb_feature_staff_ct_field_default_field_instances() {
       ),
       'people_fpp' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
           'image_link' => '',
           'image_style' => '170x170',
         ),
-        'type' => 'image',
+        'type' => 'gsb_field_formatter_image',
         'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'image',
+        'module' => 'gsb_field_formatter',
         'settings' => array(
           'conditions' => array(),
           'image_link' => '',
           'image_style' => '170x170',
         ),
-        'type' => 'image',
+        'type' => 'gsb_field_formatter_image',
         'weight' => 0,
       ),
       'tiny' => array(
