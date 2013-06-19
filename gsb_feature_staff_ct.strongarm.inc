@@ -13,6 +13,27 @@ function gsb_feature_staff_ct_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_node_staff';
+  $strongarm->value = '1';
+  $export['auto_entitylabel_node_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_pattern_node_staff';
+  $strongarm->value = '[node:field_first_name] [node:field_middle_name] [node:field_last_name]';
+  $export['auto_entitylabel_pattern_node_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_php_node_staff';
+  $strongarm->value = 0;
+  $export['auto_entitylabel_php_node_staff'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__staff';
   $strongarm->value = array(
     'view_modes' => array(

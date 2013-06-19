@@ -56,9 +56,7 @@ function gsb_feature_staff_ct_field_group_info() {
     'label' => 'Name wrapper',
     'weight' => '1',
     'children' => array(
-      0 => 'field_first_name',
-      1 => 'field_last_name',
-      2 => 'field_middle_name',
+      0 => 'title',
     ),
     'format_type' => 'div',
     'format_settings' => array(

@@ -75,59 +75,25 @@ function gsb_feature_staff_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'staff';
   $ds_fieldsetting->view_mode = 'people_fpp';
   $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '11',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '0',
+        'wrapper' => '',
+        'class' => '',
+        'ft' => array(),
+        'conditions' => array(),
+      ),
+    ),
     'field_department' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'lb' => 'of',
-          'lb-col' => TRUE,
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => 'person-area',
-          'ow-def-cl' => FALSE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_first_name' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => 'name-first',
-          'ow-def-cl' => FALSE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_image_single_public' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
-    'field_last_name' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => 'name-last',
-          'ow-def-cl' => FALSE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_middle_name' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => 'name-middle',
           'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
@@ -329,24 +295,20 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_image_single_public',
-        1 => 'field_first_name',
-        2 => 'field_department',
+        1 => 'group_wrapper_name',
+        2 => 'group_wrapper_position',
         3 => 'field_title_position_unlimited',
-        4 => 'field_middle_name',
-        5 => 'group_wrapper_name',
-        6 => 'field_last_name',
-        7 => 'group_wrapper_position',
+        4 => 'field_department',
+        5 => 'title',
       ),
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
-      'field_first_name' => 'ds_content',
-      'field_department' => 'ds_content',
-      'field_title_position_unlimited' => 'ds_content',
-      'field_middle_name' => 'ds_content',
       'group_wrapper_name' => 'ds_content',
-      'field_last_name' => 'ds_content',
       'group_wrapper_position' => 'ds_content',
+      'field_title_position_unlimited' => 'ds_content',
+      'field_department' => 'ds_content',
+      'title' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
