@@ -123,7 +123,7 @@ function gsb_feature_staff_ct_field_group_info() {
       0 => 'field_department',
       1 => 'field_title_position_unlimited',
     ),
-    'format_type' => 'div',
+    'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
       'label' => 'Position wrapper',
       'instance_settings' => array(
