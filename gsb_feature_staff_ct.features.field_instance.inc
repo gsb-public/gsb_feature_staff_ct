@@ -1028,7 +1028,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_salutation',
-    'label' => 'Salutation',
+    'label' => 'Prefix',
     'required' => 0,
     'settings' => array(
       'linkit' => array(
@@ -1364,9 +1364,9 @@ function gsb_feature_staff_ct_field_default_field_instances() {
   t('Middle Name');
   t('Phone');
   t('Photo');
+  t('Prefix');
   t('Recommended size for uploaded images is 600x440.');
   t('SUNetID');
-  t('Salutation');
   t('Search field');
   t('Title/Position');
 
