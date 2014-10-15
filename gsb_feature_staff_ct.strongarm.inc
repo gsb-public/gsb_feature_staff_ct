@@ -92,13 +92,16 @@ function gsb_feature_staff_ct_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '2',
+          'weight' => '1',
         ),
         'workbench_access' => array(
           'weight' => '1',
         ),
         'metatags' => array(
           'weight' => '15',
+        ),
+        'redirect' => array(
+          'weight' => '17',
         ),
       ),
       'display' => array(),
