@@ -621,7 +621,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'label' => 'Photo',
     'required' => 0,
     'settings' => array(
-      'alt_field' => 0,
+      'alt_field' => 1,
       'custom_add_another' => '',
       'custom_remove' => '',
       'default_image' => 0,
