@@ -10,99 +10,6 @@
 function gsb_feature_staff_ct_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-staff-field_addthis'
-  $field_instances['node-staff-field_addthis'] = array(
-    'bundle' => 'staff',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'addthis_displays',
-        'settings' => array(
-          'buttons_size' => 'addthis_16x16_style',
-          'conditions' => array(
-            0 => array(
-              'condition' => '',
-            ),
-          ),
-          'counter_orientation' => 'horizontal',
-          'custom_link_to_entity' => '',
-          'custom_prefix' => '',
-          'custom_reverse' => '',
-          'custom_strip_preserve' => '',
-          'custom_strip_tags' => '',
-          'custom_strtolower' => '',
-          'custom_strtoupper' => '',
-          'custom_suffix' => '',
-          'custom_trim' => '',
-          'custom_ucfirst' => '',
-          'extra_css' => '',
-          'share_services' => 'twitter, linkedin, facebook, google_plusone_share, compact',
-        ),
-        'type' => 'addthis_basic_toolbox',
-        'weight' => 11,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'media_contact' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 18,
-      ),
-      'people_fpp' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 13,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'tiny' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_addthis',
-    'label' => 'AddThis',
-    'required' => FALSE,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'addthis',
-      'settings' => array(
-        'maxlength_js_label' => '',
-      ),
-      'type' => 'addthis_button_widget',
-      'weight' => 14,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-staff-field_body'
   $field_instances['node-staff-field_body'] = array(
     'bundle' => 'staff',
@@ -387,8 +294,10 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'label' => 'Email',
     'required' => 0,
     'settings' => array(
+      'allow_without_formatter' => FALSE,
       'custom_add_another' => '',
       'custom_remove' => '',
+      'form_title' => 'Contact person by email',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -1381,7 +1290,6 @@ function gsb_feature_staff_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('AddThis');
   t('Bio');
   t('Department');
   t('Email');
