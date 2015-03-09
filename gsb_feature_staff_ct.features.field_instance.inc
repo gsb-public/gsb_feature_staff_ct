@@ -433,8 +433,10 @@ function gsb_feature_staff_ct_field_default_field_instances() {
   // Exported field_instance: 'node-staff-field_image_single_public'
   $field_instances['node-staff-field_image_single_public'] = array(
     'bundle' => 'staff',
+    'custom_add_another' => '',
+    'custom_remove' => '',
     'deleted' => 0,
-    'description' => 'Recommended size for uploaded images is 600x440.',
+    'description' => '540 x 540 px',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -536,6 +538,26 @@ function gsb_feature_staff_ct_field_default_field_instances() {
       'default_image' => 0,
       'file_directory' => 'person_photos',
       'file_extensions' => 'png gif jpg jpeg',
+      'filefield_paths' => array(
+        'active_updating' => 0,
+        'file_name' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '[file:ffp-name-only-original].[file:ffp-extension-original]',
+        ),
+        'file_path' => array(
+          'options' => array(
+            'pathauto' => 0,
+            'transliterate' => 0,
+          ),
+          'value' => '',
+        ),
+        'replace_existing_files' => 0,
+        'retroactive_update' => 0,
+      ),
+      'filefield_paths_enabled' => 1,
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
@@ -546,7 +568,6 @@ function gsb_feature_staff_ct_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
-        'maxlength_js_label' => '',
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -1290,6 +1311,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('540 x 540 px');
   t('Bio');
   t('Department');
   t('Email');
@@ -1299,7 +1321,6 @@ function gsb_feature_staff_ct_field_default_field_instances() {
   t('Phone');
   t('Photo');
   t('Prefix');
-  t('Recommended size for uploaded images is 600x440.');
   t('SUNetID');
   t('Search field');
   t('Title/Position');
