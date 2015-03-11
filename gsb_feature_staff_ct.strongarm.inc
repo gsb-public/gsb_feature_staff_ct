@@ -154,5 +154,12 @@ function gsb_feature_staff_ct_strongarm() {
   $strongarm->value = 0;
   $export['workbench_access_node_type_staff'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_staff';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_staff'] = $strongarm;
+
   return $export;
 }
