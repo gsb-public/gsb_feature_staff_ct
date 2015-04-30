@@ -24,6 +24,7 @@ function gsb_feature_staff_ct_field_group_info() {
     'weight' => '13',
     'children' => array(
       0 => 'field_department',
+      1 => 'field_department_office',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
@@ -50,7 +51,8 @@ function gsb_feature_staff_ct_field_group_info() {
     'label' => 'Tagging',
     'weight' => '12',
     'children' => array(
-      0 => 'group_department',
+      0 => 'group_keywords',
+      1 => 'group_department',
     ),
     'format_type' => 'tabs',
     'format_settings' => array(
