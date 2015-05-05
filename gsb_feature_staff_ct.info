@@ -66,6 +66,7 @@ features[variable][] = menu_parent_staff
 features[variable][] = node_options_staff
 features[variable][] = node_preview_staff
 features[variable][] = node_submitted_staff
+features[variable][] = pathauto_node_staff_pattern
 features[variable][] = workbench_access_node_type_staff
 features[variable][] = workbench_moderation_default_state_staff
 features_exclude[field][node-staff-field_addthis] = node-staff-field_addthis
