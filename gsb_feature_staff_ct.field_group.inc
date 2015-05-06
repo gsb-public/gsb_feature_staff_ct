@@ -169,9 +169,7 @@ function gsb_feature_staff_ct_field_group_info() {
     'label' => 'Name wrapper',
     'weight' => '1',
     'children' => array(
-      0 => 'field_first_name',
-      1 => 'field_last_name',
-      2 => 'field_middle_name',
+      0 => 'title',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -202,8 +200,8 @@ function gsb_feature_staff_ct_field_group_info() {
     'label' => 'Position wrapper',
     'weight' => '2',
     'children' => array(
-      0 => 'field_department',
-      1 => 'field_title_position_unlimited',
+      0 => 'field_title_position_unlimited',
+      1 => 'field_department',
     ),
     'format_type' => 'gsb_field_formatter_group_comma_separator',
     'format_settings' => array(
@@ -234,8 +232,8 @@ function gsb_feature_staff_ct_field_group_info() {
     'label' => 'Position wrapper',
     'weight' => '2',
     'children' => array(
-      0 => 'field_department',
-      1 => 'field_title_position_unlimited',
+      0 => 'field_title_position_unlimited',
+      1 => 'field_department',
     ),
     'format_type' => 'div',
     'format_settings' => array(

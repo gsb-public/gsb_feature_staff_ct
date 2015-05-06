@@ -27,6 +27,7 @@ datestamp = 1426108911
 features[ctools][] = ds:ds:1
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
+features[ds_field_settings][] = node|staff|default
 features[ds_field_settings][] = node|staff|media_contact
 features[ds_field_settings][] = node|staff|people_fpp
 features[ds_field_settings][] = node|staff|teaser

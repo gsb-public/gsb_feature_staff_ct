@@ -12,6 +12,88 @@ function gsb_feature_staff_ct_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|staff|default';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'staff';
+  $ds_fieldsetting->view_mode = 'default';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '2',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '0',
+        'wrapper' => 'h1',
+        'class' => 'title',
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+        'conditions' => array(),
+      ),
+    ),
+    'field_body' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_email' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_phone' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+  );
+  $export['node|staff|default'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|staff|media_contact';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'staff';
@@ -87,19 +169,6 @@ function gsb_feature_staff_ct_ds_field_settings_info() {
         'conditions' => array(),
       ),
     ),
-    'field_department' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => 'person-area',
-          'ow-def-cl' => FALSE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
     'field_title_position_unlimited' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -107,6 +176,19 @@ function gsb_feature_staff_ct_ds_field_settings_info() {
           'ow' => TRUE,
           'ow-el' => 'span',
           'ow-cl' => 'person-position',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_department' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'span',
+          'ow-cl' => 'person-area',
           'ow-def-cl' => FALSE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
@@ -123,53 +205,34 @@ function gsb_feature_staff_ct_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'staff';
   $ds_fieldsetting->view_mode = 'teaser';
   $ds_fieldsetting->settings = array(
-    'field_department' => array(
+    'title' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h1',
+        'class' => '',
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+        'conditions' => array(),
+      ),
+    ),
+    'field_image_single_public' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'div',
-          'ow-cl' => 'person-area',
-          'ow-def-cl' => FALSE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_first_name' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => 'name-first',
-          'ow-def-cl' => FALSE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_last_name' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => 'name-last',
-          'ow-def-cl' => FALSE,
-          'ow-at' => '',
-          'ow-def-at' => FALSE,
-        ),
-      ),
-    ),
-    'field_middle_name' => array(
-      'formatter_settings' => array(
-        'ft' => array(
-          'func' => 'theme_ds_field_expert',
-          'ow' => TRUE,
-          'ow-el' => 'span',
-          'ow-cl' => 'name-middle',
-          'ow-def-cl' => FALSE,
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
@@ -181,8 +244,21 @@ function gsb_feature_staff_ct_ds_field_settings_info() {
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
           'ow-el' => 'div',
-          'ow-cl' => 'person-position',
-          'ow-def-cl' => FALSE,
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
+    'field_department' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
           'ow-at' => '',
           'ow-def-at' => FALSE,
         ),
@@ -212,22 +288,18 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
       'left' => array(
         0 => 'field_image_single_public',
         1 => 'group_wrapper_information',
-        6 => 'field_phone',
-        7 => 'field_email',
+        4 => 'field_phone',
+        5 => 'field_email',
       ),
       'right' => array(
         2 => 'title',
-        3 => 'field_title_position_unlimited',
-        4 => 'field_department',
-        5 => 'field_body',
+        3 => 'field_body',
       ),
     ),
     'fields' => array(
       'field_image_single_public' => 'left',
       'group_wrapper_information' => 'left',
       'title' => 'right',
-      'field_title_position_unlimited' => 'right',
-      'field_department' => 'right',
       'field_body' => 'right',
       'field_phone' => 'left',
       'field_email' => 'left',
@@ -279,6 +351,8 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|staff|media_contact'] = $ds_layout;
 
@@ -315,6 +389,8 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|staff|people_fpp'] = $ds_layout;
 
@@ -328,23 +404,21 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_image_single_public',
-        1 => 'group_wrapper_name',
-        2 => 'field_first_name',
+        0 => 'title',
+        1 => 'field_image_single_public',
+        2 => 'group_wrapper_name',
         3 => 'field_title_position_unlimited',
-        4 => 'field_middle_name',
+        4 => 'group_wrapper_position',
         5 => 'field_department',
-        6 => 'field_last_name',
       ),
     ),
     'fields' => array(
+      'title' => 'ds_content',
       'field_image_single_public' => 'ds_content',
       'group_wrapper_name' => 'ds_content',
-      'field_first_name' => 'ds_content',
       'field_title_position_unlimited' => 'ds_content',
-      'field_middle_name' => 'ds_content',
+      'group_wrapper_position' => 'ds_content',
       'field_department' => 'ds_content',
-      'field_last_name' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -353,6 +427,8 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
   );
   $export['node|staff|teaser'] = $ds_layout;
 
