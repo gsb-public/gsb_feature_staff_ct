@@ -206,45 +206,43 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'staff';
   $ds_layout->view_mode = 'default';
-  $ds_layout->layout = 'ds_1col';
+  $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
-        0 => 'field_sunetid',
-        1 => 'field_first_name',
-        2 => 'field_middle_name',
-        3 => 'field_last_name',
-        4 => 'field_title_position_unlimited',
-        5 => 'field_image_single_public',
-        6 => 'field_email',
-        7 => 'field_department',
-        8 => 'field_salutation',
-        9 => 'field_body',
-        10 => 'field_phone',
-        11 => 'field_addthis',
+      'left' => array(
+        0 => 'field_image_single_public',
+        1 => 'group_wrapper_information',
+        6 => 'field_phone',
+        7 => 'field_email',
+      ),
+      'right' => array(
+        2 => 'title',
+        3 => 'field_title_position_unlimited',
+        4 => 'field_department',
+        5 => 'field_body',
       ),
     ),
     'fields' => array(
-      'field_sunetid' => 'ds_content',
-      'field_first_name' => 'ds_content',
-      'field_middle_name' => 'ds_content',
-      'field_last_name' => 'ds_content',
-      'field_title_position_unlimited' => 'ds_content',
-      'field_image_single_public' => 'ds_content',
-      'field_email' => 'ds_content',
-      'field_department' => 'ds_content',
-      'field_salutation' => 'ds_content',
-      'field_body' => 'ds_content',
-      'field_phone' => 'ds_content',
-      'field_addthis' => 'ds_content',
+      'field_image_single_public' => 'left',
+      'group_wrapper_information' => 'left',
+      'title' => 'right',
+      'field_title_position_unlimited' => 'right',
+      'field_department' => 'right',
+      'field_body' => 'right',
+      'field_phone' => 'left',
+      'field_email' => 'left',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'left' => 'div',
+      'right' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => 0,
   );
   $export['node|staff|default'] = $ds_layout;
 
