@@ -41,7 +41,7 @@ function gsb_feature_staff_ct_strongarm() {
         'custom_settings' => TRUE,
       ),
       'ical' => array(
-        'custom_settings' => TRUE,
+        'custom_settings' => FALSE,
       ),
       'tiny' => array(
         'custom_settings' => TRUE,
