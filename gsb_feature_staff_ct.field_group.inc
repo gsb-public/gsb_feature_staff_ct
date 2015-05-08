@@ -200,19 +200,14 @@ function gsb_feature_staff_ct_field_group_info() {
     'label' => 'Position wrapper',
     'weight' => '2',
     'children' => array(
-      0 => 'field_title_position_unlimited',
-      1 => 'field_department',
+      0 => 'field_staff_item',
     ),
-    'format_type' => 'gsb_field_formatter_group_comma_separator',
+    'format_type' => 'div',
     'format_settings' => array(
       'label' => 'Position wrapper',
       'instance_settings' => array(
+        'item_count' => '0',
         'classes' => 'person-position',
-        'description' => '',
-        'show_label' => '0',
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'none',
       ),
       'formatter' => 'open',
     ),
