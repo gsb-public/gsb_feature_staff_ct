@@ -142,83 +142,6 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_department'
-  $field_instances['node-staff-field_department'] = array(
-    'bundle' => 'staff',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 6,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'media_contact' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 15,
-      ),
-      'people_fpp' => array(
-        'label' => 'hidden',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_plain',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'taxonomy',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 3,
-      ),
-      'tiny' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_department',
-    'label' => 'Department',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'maxlength_js_label' => '',
-      ),
-      'type' => 'options_select',
-      'weight' => 21,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Exported field_instance: 'node-staff-field_email'
   $field_instances['node-staff-field_email'] = array(
     'bundle' => 'staff',
@@ -936,12 +859,6 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
       'media_contact' => array(
         'label' => 'above',
         'settings' => array(),
@@ -1128,95 +1045,10 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_title_position_unlimited'
-  $field_instances['node-staff-field_title_position_unlimited'] = array(
-    'bundle' => 'staff',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'featured' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'media_contact' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 13,
-      ),
-      'people_fpp' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'conditions' => array(),
-        ),
-        'type' => 'text_default',
-        'weight' => 2,
-      ),
-      'tiny' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_title_position_unlimited',
-    'label' => 'Title/Position',
-    'required' => 0,
-    'settings' => array(
-      'custom_add_another' => '',
-      'custom_remove' => '',
-      'linkit' => array(
-        'enable' => 0,
-        'insert_plugin' => '',
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'maxlength_js' => 0,
-        'maxlength_js_label' => '',
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 10,
-    ),
-    'workbench_access_field' => 0,
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('540 x 540 px');
   t('Bio');
-  t('Department');
   t('Email');
   t('First Name');
   t('Keywords');
@@ -1228,7 +1060,6 @@ function gsb_feature_staff_ct_field_default_field_instances() {
   t('SUNetID');
   t('Search field');
   t('Title and Department');
-  t('Title/Position');
 
   return $field_instances;
 }
