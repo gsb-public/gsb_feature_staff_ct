@@ -226,6 +226,19 @@ function gsb_feature_staff_ct_ds_field_settings_info() {
         'conditions' => array(),
       ),
     ),
+    'field_image_single_public' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => '',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
     'field_staff_item' => array(
       'formatter_settings' => array(
         'ft' => array(
