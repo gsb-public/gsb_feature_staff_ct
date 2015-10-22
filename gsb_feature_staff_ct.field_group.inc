@@ -84,7 +84,7 @@ function gsb_feature_staff_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Contact Info',
       'instance_settings' => array(
-        'classes' => '',
+        'classes' => 'group-wrapper-information',
         'description' => '',
       ),
       'formatter' => 'collapsed',
@@ -113,7 +113,8 @@ function gsb_feature_staff_ct_field_group_info() {
     'format_settings' => array(
       'label' => 'Contact PR',
       'instance_settings' => array(
-        'classes' => '',
+        'id' => '',
+        'classes' => 'group-wrapper-name',
         'description' => '',
         'show_label' => '1',
         'label_element' => 'h2',
