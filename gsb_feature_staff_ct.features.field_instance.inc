@@ -10,7 +10,7 @@
 function gsb_feature_staff_ct_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-staff-field_body'
+  // Exported field_instance: 'node-staff-field_body'.
   $field_instances['node-staff-field_body'] = array(
     'bundle' => 'staff',
     'custom_add_another' => '',
@@ -51,6 +51,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 17,
+      ),
+      'program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -142,7 +148,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_email'
+  // Exported field_instance: 'node-staff-field_email'.
   $field_instances['node-staff-field_email'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
@@ -189,6 +195,19 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 4,
       ),
+      'program_director' => array(
+        'label' => 'hidden',
+        'module' => 'email_contact',
+        'settings' => array(
+          'conditions' => array(),
+          'custom_path' => '',
+          'default_message' => '[current-user:name] sent a message using the contact form at [current-page:url].',
+          'link_text' => 'Email',
+          'redirection_to' => 'referer',
+        ),
+        'type' => 'email_contact_link',
+        'weight' => 11,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -226,7 +245,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_first_name'
+  // Exported field_instance: 'node-staff-field_first_name'.
   $field_instances['node-staff-field_first_name'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
@@ -261,6 +280,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'weight' => 1,
       ),
       'people_fpp' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
+      'program_director' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
@@ -307,7 +332,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_image_single_public'
+  // Exported field_instance: 'node-staff-field_image_single_public'.
   $field_instances['node-staff-field_image_single_public'] = array(
     'bundle' => 'staff',
     'custom_add_another' => '',
@@ -353,6 +378,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
           'image_style' => '170x170',
         ),
         'type' => 'gsb_field_formatter_image',
+        'weight' => 0,
+      ),
+      'program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -424,7 +455,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_last_name'
+  // Exported field_instance: 'node-staff-field_last_name'.
   $field_instances['node-staff-field_last_name'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
@@ -459,6 +490,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'weight' => 3,
       ),
       'people_fpp' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
+      'program_director' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
@@ -505,7 +542,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_middle_name'
+  // Exported field_instance: 'node-staff-field_middle_name'.
   $field_instances['node-staff-field_middle_name'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
@@ -540,6 +577,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'weight' => 2,
       ),
       'people_fpp' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
+      'program_director' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
@@ -586,7 +629,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_phone'
+  // Exported field_instance: 'node-staff-field_phone'.
   $field_instances['node-staff-field_phone'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
@@ -631,6 +674,16 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 3,
       ),
+      'program_director' => array(
+        'label' => 'inline',
+        'module' => 'telephone',
+        'settings' => array(
+          'conditions' => array(),
+          'title' => '',
+        ),
+        'type' => 'telephone_link',
+        'weight' => 10,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -666,7 +719,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_salutation'
+  // Exported field_instance: 'node-staff-field_salutation'.
   $field_instances['node-staff-field_salutation'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
@@ -702,6 +755,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 16,
+      ),
+      'program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -744,7 +803,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_search_field'
+  // Exported field_instance: 'node-staff-field_search_field'.
   $field_instances['node-staff-field_search_field'] = array(
     'bundle' => 'staff',
     'deleted' => 0,
@@ -779,6 +838,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 15,
+      ),
+      'program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -830,7 +895,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_staff_item'
+  // Exported field_instance: 'node-staff-field_staff_item'.
   $field_instances['node-staff-field_staff_item'] = array(
     'bundle' => 'staff',
     'custom_add_another' => '',
@@ -871,6 +936,16 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'field_collection_fields',
         'weight' => 0,
       ),
+      'program_director' => array(
+        'label' => 'hidden',
+        'module' => 'field_collection',
+        'settings' => array(
+          'conditions' => array(),
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_fields',
+        'weight' => 3,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -898,7 +973,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_sunetid'
+  // Exported field_instance: 'node-staff-field_sunetid'.
   $field_instances['node-staff-field_sunetid'] = array(
     'bundle' => 'staff',
     'default_value' => NULL,
@@ -934,6 +1009,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 18,
+      ),
+      'program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -976,7 +1057,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'node-staff-field_tag'
+  // Exported field_instance: 'node-staff-field_tag'.
   $field_instances['node-staff-field_tag'] = array(
     'bundle' => 'staff',
     'custom_add_another' => '',
@@ -1014,6 +1095,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 9,
+      ),
+      'program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',

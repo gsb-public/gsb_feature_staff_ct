@@ -127,6 +127,9 @@ function gsb_feature_staff_ct_strongarm() {
       'teaser_listing' => array(
         'custom_settings' => FALSE,
       ),
+      'program_director' => array(
+        'custom_settings' => TRUE,
+      ),
       'compact' => array(
         'custom_settings' => FALSE,
       ),
