@@ -261,7 +261,7 @@ function gsb_feature_staff_ct_ds_field_settings_info() {
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
-        'link' => '0',
+        'link' => '1',
         'wrapper' => 'h2',
         'class' => '',
         'ft' => array(

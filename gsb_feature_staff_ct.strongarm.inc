@@ -130,6 +130,15 @@ function gsb_feature_staff_ct_strongarm() {
       'program_director' => array(
         'custom_settings' => TRUE,
       ),
+      'field_fieldx' => array(
+        'custom_settings' => FALSE,
+      ),
+      'field_fieldy' => array(
+        'custom_settings' => FALSE,
+      ),
+      'field_fieldz' => array(
+        'custom_settings' => FALSE,
+      ),
       'compact' => array(
         'custom_settings' => FALSE,
       ),
