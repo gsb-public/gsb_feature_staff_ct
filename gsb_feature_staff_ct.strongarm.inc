@@ -151,6 +151,27 @@ function gsb_feature_staff_ct_strongarm() {
       'main_list' => array(
         'custom_settings' => FALSE,
       ),
+      'field_program_director' => array(
+        'custom_settings' => TRUE,
+      ),
+      'field_program_curriculum' => array(
+        'custom_settings' => FALSE,
+      ),
+      'field_program_curriculum_one' => array(
+        'custom_settings' => FALSE,
+      ),
+      'field_program_curriculum_two' => array(
+        'custom_settings' => FALSE,
+      ),
+      'field_program_ctas' => array(
+        'custom_settings' => FALSE,
+      ),
+      'field_program_related' => array(
+        'custom_settings' => FALSE,
+      ),
+      'featured_program' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

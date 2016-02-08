@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function gsb_feature_staff_ct_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -36,7 +36,7 @@ function gsb_feature_staff_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_department|node|staff|form'] = $field_group;
+  $field_groups['group_department|node|staff|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -62,7 +62,42 @@ function gsb_feature_staff_ct_field_group_info() {
       ),
     ),
   );
-  $export['group_taxonomy|node|staff|form'] = $field_group;
+  $field_groups['group_taxonomy|node|staff|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_wrapper_contact|node|staff|field_program_director';
+  $field_group->group_name = 'group_wrapper_contact';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'staff';
+  $field_group->mode = 'field_program_director';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Contact',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_email',
+      1 => 'field_phone',
+      2 => 'field_staff_item',
+      3 => 'title',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Contact',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-wrapper-contact field-group-div',
+        'description' => '',
+        'show_label' => '1',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $field_groups['group_wrapper_contact|node|staff|field_program_director'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -90,7 +125,7 @@ function gsb_feature_staff_ct_field_group_info() {
       'formatter' => 'collapsed',
     ),
   );
-  $export['group_wrapper_information|node|staff|default'] = $field_group;
+  $field_groups['group_wrapper_information|node|staff|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -124,7 +159,7 @@ function gsb_feature_staff_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_name|node|staff|media_contact'] = $field_group;
+  $field_groups['group_wrapper_name|node|staff|media_contact'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -155,7 +190,7 @@ function gsb_feature_staff_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_name|node|staff|people_fpp'] = $field_group;
+  $field_groups['group_wrapper_name|node|staff|people_fpp'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -186,7 +221,7 @@ function gsb_feature_staff_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_name|node|staff|teaser'] = $field_group;
+  $field_groups['group_wrapper_name|node|staff|teaser'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -213,7 +248,7 @@ function gsb_feature_staff_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_position|node|staff|people_fpp'] = $field_group;
+  $field_groups['group_wrapper_position|node|staff|people_fpp'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -245,7 +280,17 @@ function gsb_feature_staff_ct_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_wrapper_position|node|staff|teaser'] = $field_group;
+  $field_groups['group_wrapper_position|node|staff|teaser'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Contact');
+  t('Contact Info');
+  t('Contact PR');
+  t('Department');
+  t('Name wrapper');
+  t('Position wrapper');
+  t('Tagging');
+
+  return $field_groups;
 }

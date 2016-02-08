@@ -34,6 +34,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
       'ical' => array(
         'label' => 'above',
         'settings' => array(),
@@ -174,6 +180,19 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'module' => 'email_contact',
+        'settings' => array(
+          'conditions' => array(),
+          'custom_path' => '',
+          'default_message' => '[current-user:name] sent a message using the contact form at [current-page:url].',
+          'link_text' => 'Email',
+          'redirection_to' => 'referer',
+        ),
+        'type' => 'email_contact_link',
+        'weight' => 4,
+      ),
       'ical' => array(
         'label' => 'above',
         'settings' => array(),
@@ -263,6 +282,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
       ),
       'ical' => array(
         'label' => 'above',
@@ -356,6 +381,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
       ),
       'ical' => array(
         'label' => 'above',
@@ -474,6 +505,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
+      ),
       'ical' => array(
         'label' => 'above',
         'settings' => array(),
@@ -560,6 +597,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
       ),
       'ical' => array(
         'label' => 'above',
@@ -652,6 +695,16 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'module' => 'telephone',
+        'settings' => array(
+          'conditions' => array(),
+          'title' => '',
+        ),
+        'type' => 'telephone_link',
+        'weight' => 3,
+      ),
       'ical' => array(
         'label' => 'above',
         'settings' => array(),
@@ -738,6 +791,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
+      ),
       'ical' => array(
         'label' => 'above',
         'settings' => array(),
@@ -820,6 +879,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
       ),
       'ical' => array(
         'label' => 'above',
@@ -920,6 +985,16 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 0,
       ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'module' => 'field_collection',
+        'settings' => array(
+          'conditions' => array(),
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_fields',
+        'weight' => 2,
+      ),
       'media_contact' => array(
         'label' => 'above',
         'settings' => array(),
@@ -991,6 +1066,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1077,6 +1158,12 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
+      ),
+      'field_program_director' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 19,
       ),
       'ical' => array(
         'label' => 'above',
