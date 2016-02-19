@@ -172,6 +172,9 @@ function gsb_feature_staff_ct_strongarm() {
       'featured_program' => array(
         'custom_settings' => FALSE,
       ),
+      'program_contact' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
