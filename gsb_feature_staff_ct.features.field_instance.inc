@@ -62,7 +62,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'program_director' => array(
         'label' => 'hidden',
@@ -231,7 +231,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
           'redirection_to' => 'referer',
         ),
         'type' => 'email_contact_link',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'program_director' => array(
         'label' => 'hidden',
@@ -333,7 +333,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'program_director' => array(
         'label' => 'hidden',
@@ -572,7 +572,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'program_director' => array(
         'label' => 'hidden',
@@ -671,7 +671,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'program_director' => array(
         'label' => 'hidden',
@@ -783,7 +783,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
           'title' => '',
         ),
         'type' => 'telephone_link',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'program_director' => array(
         'label' => 'inline',
@@ -877,7 +877,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'program_director' => array(
         'label' => 'hidden',
@@ -972,7 +972,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'program_director' => array(
         'label' => 'hidden',
@@ -1089,7 +1089,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'program_director' => array(
         'label' => 'hidden',
@@ -1175,7 +1175,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'program_director' => array(
         'label' => 'hidden',
@@ -1273,7 +1273,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'program_director' => array(
         'label' => 'hidden',

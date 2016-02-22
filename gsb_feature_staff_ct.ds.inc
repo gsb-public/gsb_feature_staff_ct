@@ -326,7 +326,7 @@ function gsb_feature_staff_ct_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'program_contact';
   $ds_fieldsetting->settings = array(
     'title' => array(
-      'weight' => '1',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -742,14 +742,16 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_image_single_public',
-        1 => 'title',
-        2 => 'field_staff_item',
-        3 => 'field_phone',
-        4 => 'field_email',
+        1 => 'group_wrapper_info',
+        2 => 'title',
+        3 => 'field_staff_item',
+        4 => 'field_phone',
+        5 => 'field_email',
       ),
     ),
     'fields' => array(
       'field_image_single_public' => 'ds_content',
+      'group_wrapper_info' => 'ds_content',
       'title' => 'ds_content',
       'field_staff_item' => 'ds_content',
       'field_phone' => 'ds_content',
@@ -764,6 +766,7 @@ function gsb_feature_staff_ct_ds_layout_settings_info() {
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
   );
   $export['node|staff|program_contact'] = $ds_layout;
 

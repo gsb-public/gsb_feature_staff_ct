@@ -48,6 +48,7 @@ features[field_group][] = group_department|node|staff|form
 features[field_group][] = group_taxonomy|node|staff|form
 features[field_group][] = group_wrapper_contact|node|staff|field_program_director
 features[field_group][] = group_wrapper_information|node|staff|default
+features[field_group][] = group_wrapper_info|node|staff|program_contact
 features[field_group][] = group_wrapper_name|node|staff|media_contact
 features[field_group][] = group_wrapper_name|node|staff|people_fpp
 features[field_group][] = group_wrapper_name|node|staff|teaser
