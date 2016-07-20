@@ -192,7 +192,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'custom_path' => '',
-          'default_message' => '[current-user:name] sent a message using the contact form at [current-page:url].',
+          'default_message' => 'This email was sent using a contact form at <a href="http://gsb.stanford.edu">http://gsb.stanford.edu</a>. <br /><br />',
           'link_text' => 'Email',
           'redirection_to' => 'referer',
         ),
@@ -226,7 +226,7 @@ function gsb_feature_staff_ct_field_default_field_instances() {
         'settings' => array(
           'conditions' => array(),
           'custom_path' => '',
-          'default_message' => '[current-user:name] sent a message using the contact form at [current-page:url].',
+          'default_message' => 'This email was sent using a contact form at <a href="http://gsb.stanford.edu">http://gsb.stanford.edu</a>. <br /><br />',
           'link_text' => 'Email',
           'redirection_to' => 'referer',
         ),
