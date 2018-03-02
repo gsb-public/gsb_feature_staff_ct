@@ -79,6 +79,7 @@ features[variable][] = node_submitted_staff
 features[variable][] = pathauto_node_staff_pattern
 features[variable][] = workbench_access_node_type_staff
 features[variable][] = workbench_moderation_default_state_staff
+features[variable][] = xmlsitemap_settings_node_staff
 features_exclude[field][node-staff-field_addthis] = node-staff-field_addthis
 features_exclude[field][node-staff-field_search_field] = node-staff-field_search_field
 features_exclude[field][node-staff-field_body] = node-staff-field_body
